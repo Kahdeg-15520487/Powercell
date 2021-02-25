@@ -26,26 +26,6 @@ public class PowercellBlocks: ContentList{
                 alwaysUnlocked = true
             }
         }
-
-        sieve = object : GenericCrafter("sieve") {
-            init {
-                requirements(Category.crafting, with(Items.copper, 35))
-
-                size = 1
-                craftTime = 60f
-                craftEffect = pulverize
-
-                hasPower = false
-                hasLiquids = false
-                hasItems = true
-
-                outputItem = ItemStack(Items.scrap, 1)
-
-                consumes.item(Items.sand, 4)
-
-                alwaysUnlocked = true
-            }
-        }
     }
 
     companion object{
