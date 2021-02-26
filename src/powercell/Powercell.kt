@@ -12,6 +12,7 @@ class Powercell : Mod(){
 
     override fun loadContent(){
         Log.info("Loading some example content.")
+        PowercellItems().load()
         PowercellBlocks().load()
     }
 }
