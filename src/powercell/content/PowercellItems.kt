@@ -10,7 +10,7 @@ class PowercellItems : ContentList {
             init {
                 alwaysUnlocked = true
                 lowPriority = true
-                radioactivity = 10f
+                radioactivity = -10f
             }
         }
     }

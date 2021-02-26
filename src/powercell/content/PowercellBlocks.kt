@@ -25,16 +25,20 @@ public class PowercellBlocks: ContentList{
                 requirements(Category.power, with(Items.copper, 100, Items.lead, 50, Items.graphite, 100))
                 size = 2
                 powerProduction = 1f
-                itemDuration = 120f
+                itemDuration = 600f
+
+                // 120 * 10 * 1 = 120 * 10 * 
 
                 consumes.item(PowercellItems.powercell,1)
                 
                 alwaysUnlocked = true
                 randomlyExplode = false
+
+                description = "Release the stored energy in powercells."
             }
 
             override fun getItemEfficiency(item: Item): Float{
-                return item.radioactivity;
+                return -item.radioactivity;
             }
         }
         charger = object : GenericCrafter("charger"){
@@ -42,7 +46,7 @@ public class PowercellBlocks: ContentList{
                 requirements(Category.power, with(Items.copper, 100, Items.lead, 50, Items.graphite, 100))
 
                 size = 2
-                craftTime = 60f
+                craftTime = 600f
                 ambientSound = door
                 craftEffect = pickup
 
@@ -55,6 +59,8 @@ public class PowercellBlocks: ContentList{
                 outputItem = ItemStack(PowercellItems.powercell,1)
 
                 alwaysUnlocked = true
+
+                description = "Charge graphite to store energy, result in powercell"
             }
         }
     }
