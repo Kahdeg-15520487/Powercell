@@ -1,5 +1,5 @@
 name: "Powercell"
-displayName: "Powercell"
+displayName: "Powercell."
 author: "kahdeg"
 main: "powercell.Powercell"
 description: "A mindustry jar mod that add powercell, a form of direct energy generation and transportation."

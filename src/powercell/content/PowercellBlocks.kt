@@ -25,7 +25,7 @@ public class PowercellBlocks: ContentList{
                 requirements(Category.power, with(Items.copper, 100, Items.lead, 50, Items.graphite, 100))
                 size = 2
                 powerProduction = 1f
-                itemDuration = 600f
+                itemDuration = 120f
 
                 // 120 * 10 * 1 = 120 * 10 * 
 
@@ -46,7 +46,7 @@ public class PowercellBlocks: ContentList{
                 requirements(Category.power, with(Items.copper, 100, Items.lead, 50, Items.graphite, 100))
 
                 size = 2
-                craftTime = 600f
+                craftTime = 120f
                 ambientSound = door
                 craftEffect = pickup
 
